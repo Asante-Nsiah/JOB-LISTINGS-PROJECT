@@ -4,7 +4,6 @@ body {
     font-size: 15px;
     background-color: hsl(180, 52%, 96%);
     margin: 0;
-    overflow-x: hidden;
 }
 
 .head{
@@ -13,14 +12,13 @@ body {
     background-repeat: no-repeat;
     background-color: hsl(180, 29%, 50%);
     height: 200px;
-    width: 100%;
+    width: 228%;
 }
 
 .filter{
-    width: 800px;
-    height: 50px;
+    width: 300px;
+    height: 150px;
     padding: 5px;
-    padding-right: 50px;
     position: relative;
     top: -30px;
     background-color: white;
@@ -30,35 +28,42 @@ body {
 }
 
 input{
-    width: 730px;
-    height: 45px;
+    width: 200px;
+    height: 120px;
     border-style: none;
 }
 
 .Clear{
     text-decoration: none;
     color:hsl(180, 14%, 20%) ;
-    
+    font-size: large; 
 }
 
-
 .container{
-    width: 800px;
+    width: 280px;
     border: 1px snow;
-    padding: 30px;
-    display: flex;
+    padding: 20px;
     background-color: white;
     border-radius: 5px;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     font-size: 15px;
     margin: 0 auto 0 auto;
+    position: relative;
     
 }
 
+.logo{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -22px;
+      
+}
+
 .list{
-   padding-left: 15px;
-   width: 250px;
+    padding: 5px;
+    margin: 0px;
 }
 
 .company{
@@ -70,9 +75,7 @@ input{
 
 .features{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+      
 }
 #new{
     border-style: none;
@@ -82,6 +85,8 @@ input{
     font-weight: 700;
     font-size: 10px;
     background-color: hsl(180, 29%, 50%);
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 #feat{
@@ -96,21 +101,19 @@ input{
 }
 
 .skill{
-    display: flex;
-    padding-left: 100px;
-    justify-content: space-between;
-    justify-items: flex-end;
-    width: 500px;
-    align-items: center;
+    padding: 5px;
+   
+
 }
 .period{
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .skillSet{
     background-color:hsl(180, 31%, 95%) ;
+    color: hsl(180, 29%, 50%);
     border: 1px solid;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
@@ -118,6 +121,9 @@ input{
     padding: 5px;
     border-style: none;
     border-radius: 5px;
+    justify-content: space-around;
+    margin-right: 5px;
+    margin-top: 10px;
 }
 
 button:hover{
@@ -125,33 +131,131 @@ button:hover{
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1440px) {
+    .filter{
+        width: 800px;
+        height: 50px;
+        padding: 5px;
+        padding-right: 50px;
+        position: relative;
+        top: -30px;
+        background-color: white;
+        border: 1px snow;
+        border-radius: 5px;
+        margin: 0 auto 0 auto;
+    }
+    
 
-
-
-@media screen and (max-width: 480px) {
+    input{
+        width: 730px;
+        height: 45px;
+        border-style: none;
+    }
+    
+    .Clear{
+        text-decoration: none;
+        color:hsl(180, 14%, 20%) ;
+        
+    }
+    
+    
     .container{
-        width: 375px;
+        width: 800px;
         border: 1px snow;
         padding: 30px;
-        
+        display: flex;
         background-color: white;
         border-radius: 5px;
         font-family: 'Spartan', sans-serif;
         font-weight: 700;
-        font-size: 15px;
-        
+        font-size: 12px;
+        margin: 0 auto 0 auto;
+        position: relative;
     }
+    
+    .list{
+      margin-left: 100px;
+       width: 300px;
+       padding-left: 10px;
+       
+    }
+    
+    .company{
+        
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        color: hsl(180, 29%, 50%) ;
+    }
+
+    .logo{
+        height: 80px;
+        width: 80px;  
+        position: absolute;
+        top: 35px;
+    }
+    
+    #new{
+        border-style: none;
+        border-radius: 5px;
+        padding: 0px;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: hsl(180, 29%, 50%);
+    }
+    
+    #feat{
+        border-style: none;
+        border-radius: 5px;
+        padding: 3px;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: black;
+        color: white;
+    }
+    
     .skill{
         display: flex;
-        padding-left: 100px;
+        margin-left: 100px;
         justify-content: space-between;
-        
-        
+        justify-items: flex-end;
+        width: 300px;
         align-items: center;
-       
-    } 
-    .logo{
-        width: 20px;
-        height: 20px;
     }
+    .period{
+        color:hsl(180, 5%, 61%) ;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .rule{
+        visibility: hidden;
+    }
+    .skillSet{
+        background-color:hsl(180, 31%, 95%) ;
+        color: hsl(180, 29%, 50%);
+        border: 1px solid;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 5px;
+        border-style: none;
+        border-radius: 5px;
+    }
+
+   .jobTitle{
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        
+   }
+    
+   
+    
 }
+
+
+
