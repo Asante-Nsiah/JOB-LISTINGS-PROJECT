@@ -5,7 +5,12 @@ body {
     background-color: hsl(180, 52%, 96%);
     margin: 0;
 }
+img {
+    max-width: 100%;
+}
+li{
 
+}
 .head{
     background-image: url(ASSETS/images/bg-header-desktop.svg);
     background-size: cover;
@@ -15,10 +20,12 @@ body {
     width: 228%;
 }
 
-.filter{
-    width: 300px;
+.filter-box{
+    width: 230px;
     height: 150px;
-    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
     position: relative;
     top: -30px;
     background-color: white;
@@ -27,16 +34,44 @@ body {
     margin: 0 auto 0 auto;
 }
 
-input{
+.skill-filter {
+    border-radius: 5px 0px 0px 5px;
+    max-width: fit-content;
+    background: hsl(180, 31%, 95%);
+    color: hsl(180,29%,50%);
+    
+}
+
+.skill-filter .skill-content {
+    padding: 10px;
+}
+
+.skill-filter .skill-close {
+    background-color: hsl(180, 29%, 50%);
+    padding: 5px;
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+   
+
+
+/*input{
     width: 200px;
     height: 120px;
     border-style: none;
-}
+}*/
 
 .Clear{
     text-decoration: none;
     color:hsl(180, 14%, 20%) ;
     font-size: large; 
+    list-style: none;
+    position: absolute;
+    top: 240px;
+    right: 200px;
 }
 
 .container{
@@ -79,7 +114,7 @@ input{
 }
 #new{
     border-style: none;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 3px;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
@@ -91,7 +126,7 @@ input{
 
 #feat{
     border-style: none;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 3px;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
@@ -106,6 +141,7 @@ input{
 
 }
 .period{
+    color:hsl(180, 5%, 61%) ;
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -129,7 +165,22 @@ input{
 button:hover{
     background-color:hsl(180, 29%, 50%) ;
     cursor: pointer;
+    color: white;
 }
+
+.jobTitle:hover{
+    color:hsl(180, 29%, 50%) ;
+    cursor: pointer;
+}
+
+.Clear:hover{
+    text-decoration: underline;
+    color:hsl(180, 29%, 50%);
+    cursor: pointer;
+    
+}
+
+
 
 @media only screen and (min-width: 1440px) {
     .filter{
@@ -146,16 +197,20 @@ button:hover{
     }
     
 
-    input{
+    /*input{
         width: 730px;
         height: 45px;
         border-style: none;
-    }
+    }*/
     
     .Clear{
-        text-decoration: none;
-        color:hsl(180, 14%, 20%) ;
-        
+            text-decoration: none;
+            color:hsl(180, 14%, 20%) ;
+            font-size: large;    
+            list-style: none;
+            position: absolute;
+            top: 200px;
+            right: 470px;
     }
     
     
@@ -179,6 +234,21 @@ button:hover{
        padding-left: 10px;
        
     }
+
+    .filter-box{
+            width: 750px;
+            height: 80px;
+            padding-left: 50px;
+            padding-right:50px ;
+            position: relative;
+            top: -30px;
+            background-color: white;
+            border: 1px snow;
+            border-radius: 5px;
+            margin: 0 auto 0 auto;
+
+        }
+   
     
     .company{
         
@@ -197,8 +267,8 @@ button:hover{
     
     #new{
         border-style: none;
-        border-radius: 5px;
-        padding: 0px;
+        border-radius: 15px;
+        padding: 3px;
         font-family: 'Spartan', sans-serif;
         font-weight: 700;
         font-size: 12px;
@@ -207,7 +277,7 @@ button:hover{
     
     #feat{
         border-style: none;
-        border-radius: 5px;
+        border-radius: 15px;
         padding: 3px;
         font-family: 'Spartan', sans-serif;
         font-weight: 700;
@@ -218,10 +288,10 @@ button:hover{
     
     .skill{
         display: flex;
-        margin-left: 100px;
+        margin-left: 20px;
         justify-content: space-between;
         justify-items: flex-end;
-        width: 300px;
+        width: 350px;
         align-items: center;
     }
     .period{

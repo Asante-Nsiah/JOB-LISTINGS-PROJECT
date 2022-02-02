@@ -15,15 +15,18 @@
     <div class="head">
         
     </div>
-
-    <div class="filter">
-      <input type="text">  
-       
-        <a href="#" class="Clear">Clear</a>
-    <br> 
-    <br>
-    <br>
+    <div class="filter-box">
+        <div class="skill-filter">
+            <span class="skill-content">Frontend</span> 
+            <span class="skill-close"><img src="ASSETS/images/icon-remove.svg" alt=""></span>
+         </div> 
     </div>
+    <ul>
+        <li class="Clear">Clear</li>
+    </ul>
+    <br> 
+    
+
     <div class="mainContainer">
         <div class="container" id="one">
             <img class="logo" src="ASSETS/images/photosnap.svg" alt="">
@@ -32,16 +35,16 @@
                  <button id="new">NEW!</button>
                  <button id="feat" >FEATURED</button>
                 </div> 
-                <p><div class="jobTitle"> Senior Frontend Developer</div></p>
+                <p><div class="jobTitle" > Senior Frontend Developer</div></p>
                 <div class="period">1d ago  .  Full Time  .  USA only</div>
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Frontend</button> 
-                <button class="skillSet" > Senior</button> 
-                <button class="skillSet" > HTML</button>
-                <button class="skillSet" > CSS</button>
-                <button class="skillSet" >JavaScript</button>
+                <button class="skillSet" data-role="frontend"> Frontend</button> 
+                <button class="skillSet" data-level="senior" > Senior</button> 
+                <button class="skillSet" data-languages="html"> HTML</button>
+                <button class="skillSet" data-languages="css"> CSS</button>
+                <button class="skillSet" data-languages="javascript">JavaScript</button>
             </div>
         </div>
         <br>
@@ -58,10 +61,10 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Fullstack</button> 
-                <button class="skillSet" > Midweight</button> 
-                <button class="skillSet" > Python</button>
-                <button class="skillSet" > React</button>
+                <button class="skillSet" data-role="fullstack"> Fullstack</button> 
+                <button class="skillSet" data-level="midweight"> Midweight</button> 
+                <button class="skillSet" data-languages="python"> Python</button>
+                <button class="skillSet" data-tools="react"> React</button>
                
             </div>
         </div>
@@ -79,11 +82,11 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Frontend</button> 
-                <button class="skillSet" > Junior</button> 
-                <button class="skillSet" > JavaScript</button>
-                <button class="skillSet" > React</button>
-                <button class="skillSet" >Sass</button>
+                <button class="skillSet" data-role="frontend"> Frontend</button> 
+                <button class="skillSet" data-role="junior"> Junior</button> 
+                <button class="skillSet" data-languages="javascript"> JavaScript</button>
+                <button class="skillSet" data-tools="react"> React</button>
+                <button class="skillSet" data-tools="sass">Sass</button>
             </div>
         </div>
         <br>
@@ -98,10 +101,10 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Frontend</button> 
-                <button class="skillSet" > Junior</button> 
-                <button class="skillSet" > CSS</button>
-                <button class="skillSet" >JavaScript</button>
+                <button class="skillSet" data-role="frontend"> Frontend</button> 
+                <button class="skillSet" data-level="junior"> Junior</button> 
+                <button class="skillSet" data-languages="css"> CSS</button>
+                <button class="skillSet" data-languages="javascript">JavaScript</button>
             </div>
         </div>
         <br>
@@ -117,11 +120,11 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Fullstack</button> 
-                <button class="skillSet" > Midweight</button> 
-                <button class="skillSet" > JavaScript</button>
-                <button class="skillSet" > Ruby</button>
-                <button class="skillSet" >Sass</button>
+                <button class="skillSet" data-role="fullstack"> Fullstack</button> 
+                <button class="skillSet" data-level="midweight"> Midweight</button> 
+                <button class="skillSet" data-languages="javascript"> JavaScript</button>
+                <button class="skillSet" data-languages="ruby"> Ruby</button>
+                <button class="skillSet" data-tools="sass">Sass</button>
             </div>
         </div>
         <br>
@@ -137,10 +140,10 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Backend</button> 
-                <button class="skillSet" > Junior</button> 
-                <button class="skillSet" > Ruby</button>
-                <button class="skillSet" > RoR</button>
+                <button class="skillSet" data-role="backend"> Backend</button> 
+                <button class="skillSet" data-level="junior"> Junior</button> 
+                <button class="skillSet" data-languages="ruby"> Ruby</button>
+                <button class="skillSet" data-tools="ror"> RoR</button>
                 
             </div>
         </div>
@@ -157,11 +160,11 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Frontend</button> 
-                <button class="skillSet" > Junior</button> 
-                <button class="skillSet" > HTML</button>
-                <button class="skillSet" > JavaScript</button>
-                <button class="skillSet" >Sass</button>
+                <button class="skillSet" data-role="frontend"> Frontend</button> 
+                <button class="skillSet" data-level="junior"> Junior</button> 
+                <button class="skillSet" data-languages="html"> HTML</button>
+                <button class="skillSet" data-languages="javascript"> JavaScript</button>
+                <button class="skillSet" data-tools="sass">Sass</button>
             </div>
         </div>
         <br>
@@ -177,11 +180,11 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Frontend</button> 
-                <button class="skillSet" > Junior</button> 
-                <button class="skillSet" > JavaScript</button>
-                <button class="skillSet" > Vue</button>
-                <button class="skillSet" >Sass</button>
+                <button class="skillSet" data-role="frontend"> Frontend</button> 
+                <button class="skillSet" data-level="junior"> Junior</button> 
+                <button class="skillSet" data-languages="javascript"> JavaScript</button>
+                <button class="skillSet" data-tools="vue"> Vue</button>
+                <button class="skillSet" data-tools="sass">Sass</button>
             </div>
         </div>
         <br>
@@ -197,11 +200,11 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Fullstack</button> 
-                <button class="skillSet" > Midweight</button> 
-                <button class="skillSet" > JavaScript</button>
-                <button class="skillSet" > Python</button>
-                <button class="skillSet" >Django</button>
+                <button class="skillSet" data-role="fullstack"> Fullstack</button> 
+                <button class="skillSet" data-level="midweight"> Midweight</button> 
+                <button class="skillSet" data-languages="javascript"> JavaScript</button>
+                <button class="skillSet" data-languages="python"> Python</button>
+                <button class="skillSet" data-tools="django">Django</button>
             </div>
         </div>
         <br>
@@ -217,11 +220,11 @@
             </div>
             <hr class="rule">
             <div class="skill">
-                <button class="skillSet" > Frontend</button> 
-                <button class="skillSet" > Junior</button> 
-                <button class="skillSet" > JavaScript</button>
-                <button class="skillSet" > React</button>
-                <button class="skillSet" >Sass</button>
+                <button class="skillSet" data-role="frontend"> Frontend</button> 
+                <button class="skillSet" data-level="junior"> Junior</button> 
+                <button class="skillSet" data-languages="javascript"> JavaScript</button>
+                <button class="skillSet" data-tools="react"> React</button>
+                <button class="skillSet" data-tools="sass">Sass</button>
             </div>
         </div>
         <br>
